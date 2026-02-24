@@ -1,0 +1,180 @@
+on:
+  push:
+    branches:
+      - trimAl
+    paths:
+      - '.github/workflows/build.yml'
+      - 'dataset/**'
+      - 'scripts/**'
+      - 'source/**'
+  pull_request:
+    branches:
+      - trimAl
+    types: [ready_for_review]
+    paths:
+      - '.github/workflows/build.yml'
+      - 'dataset/**'
+      - 'scripts/**'
+      - 'source/**'
+
+name: Build 
+
+jobs:
+  build_ubuntu_x86_64:
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build trimAl for Linux x86_64
+        run: cd source && make all && file trimal && file readal && file statal && cd .. && tar -cvf source_bin.tar -C source trimal readal statal
+      - name: Upload build binaries for Linux x86_64
+        uses: actions/upload-artifact@v4
+        with:
+          name: trimal_linux_x86_64
+          path: source_bin.tar
+          overwrite: true
+          retention-days: 1
+          if-no-files-found: error
+
+  build_ubuntu_aarch64:
+    if: endsWith(github.head_ref, 'release')
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build trimAl for Linux aarch64
+        uses: uraimo/run-on-arch-action@v3
+        with:
+          arch: aarch64
+          distro: ubuntu22.04
+          githubToken: ${{ github.token }}
+          dockerRunArgs: |
+            --volume "${PWD}:/trimal" 
+          install: |
+            apt-get update -q -y
+            apt-get install -q -y make g++ file
+          run: |
+            cd /trimal/source && make all && file trimal && file readal && file statal && cd .. && tar -cvf source_bin.tar -C source trimal readal statal
+      - name: Upload build binaries for Linux aarch64
+        uses: actions/upload-artifact@v4
+        with:
+          name: trimal_linux_aarch64
+          path: source_bin.tar
+          overwrite: true
+          retention-days: 1
+          if-no-files-found: error
+
+  test_ubuntu_x86_64:
+    runs-on: ubuntu-22.04
+    needs: build_ubuntu_x86_64
+    steps:
+      - uses: actions/checkout@v4
+      - name: Download build binaries for Linux x86_64
+        uses: actions/download-artifact@v4
+        with:
+          name: trimal_linux_x86_64
+          path: source
+      - name: Test trimAl for Linux x86_64
+        run: tar -xvf source/source_bin.tar -C source && source/trimal && ./scripts/generate_trimmed_msas.sh && ./scripts/compare_trimmed_msas.sh
+
+  test_ubuntu_aarch64:
+    if: endsWith(github.head_ref, 'release')
+    runs-on: ubuntu-22.04
+    needs: build_ubuntu_aarch64
+    steps:
+      - uses: actions/checkout@v4
+      - name: Download build binaries for Linux aarch64
+        uses: actions/download-artifact@v4
+        with:
+          name: trimal_linux_aarch64
+          path: source
+      - name: Test trimAl for Linux aarch64
+        uses: uraimo/run-on-arch-action@v3
+        with:
+          arch: aarch64
+          distro: ubuntu22.04
+          githubToken: ${{ github.token }}
+          dockerRunArgs: |
+            --volume "${PWD}:/trimal" 
+          run: tar -xvf source/source_bin.tar -C source && source/trimal && ./scripts/generate_trimmed_msas.sh && ./scripts/compare_trimmed_msas.sh
+
+  build_macos:
+    strategy:
+      matrix:
+        version: [macos-14, macos-15-intel]
+    runs-on: ${{ matrix.version }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build trimAl for ${{ matrix.version }}
+        run: cd source && make all && file trimal && file readal && file statal && cd .. && tar -cvf source_bin.tar -C source trimal readal statal
+      - name: Upload build binaries for ${{ matrix.version }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: trimal_${{ matrix.version }}
+          path: source_bin.tar
+          overwrite: true
+          retention-days: 1
+          if-no-files-found: error
+  
+  test_macos:
+    strategy:
+      matrix:
+        version: [macos-14, macos-15-intel]
+    runs-on: ${{ matrix.version }}
+    needs: build_macos
+    steps:
+      - uses: actions/checkout@v4
+      - name: Download build binaries for ${{ matrix.version }}
+        uses: actions/download-artifact@v4
+        with:
+          name: trimal_${{ matrix.version }}
+          path: source
+      - name: Test trimAl for ${{ matrix.version }}
+        run: |
+          tar -xvf source/source_bin.tar -C source && source/trimal &&
+          ./scripts/generate_trimmed_msas.sh && ./scripts/compare_trimmed_msas.sh
+
+  build_windows:
+    runs-on: windows-2022
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up MSYS2
+        uses: msys2/setup-msys2@v2
+        with:
+          msystem: MINGW64
+          update: true
+          install: >-
+            make
+            mingw-w64-x86_64-gcc
+            file
+      - name: Build trimAl for Windows
+        run: |
+          cd source
+          make -f makefile.Windows
+          file trimal.exe
+          file readal.exe
+          file statal.exe
+          cd ..
+          tar -cvf source_bin.tar -C source trimal.exe readal.exe statal.exe
+      - name: Upload build binaries for Windows
+        uses: actions/upload-artifact@v4
+        with:
+          name: trimal_windows
+          path: source_bin.tar
+          overwrite: true
+          retention-days: 1
+          if-no-files-found: error
+
+  test_windows:
+    runs-on: windows-2022
+    needs: build_windows
+    steps:
+      - uses: actions/checkout@v4
+      - name: Download build binaries for Windows
+        uses: actions/download-artifact@v4
+        with:
+          name: trimal_windows
+          path: source
+      - name: Test trimAl for Windows
+        run: |
+          tar -xvf source/source_bin.tar -C source
+          powershell -ExecutionPolicy Bypass -File .\scripts\generate_trimmed_msas.ps1
+          powershell -ExecutionPolicy Bypass -File .\scripts\compare_trimmed_msas.ps1

@@ -1,0 +1,10 @@
+Trimming pax6_family.clustalw.fasta...
+Picked up _JAVA_OPTIONS: "-Xss2560k"
+Exception in thread "main" java.lang.StringIndexOutOfBoundsException: begin 0, end -1, length 17
+	at java.base/java.lang.String.checkBoundsBeginEnd(String.java:3319)
+	at java.base/java.lang.String.substring(String.java:1874)
+	at BMGE.main(BMGE.java:277)
+
+real	0m0.618s
+user	0m0.182s
+sys	0m0.046s

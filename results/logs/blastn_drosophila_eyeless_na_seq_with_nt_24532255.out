@@ -1,0 +1,22 @@
+Lmod has detected the following error: The following module(s) are unknown:
+"bioinfo-ugrp-module"
+
+Please check the spelling or version number. Also try "module spider ..."
+It is also possible your cache file is out-of-date; it may help to try:
+  $ module --ignore-cache load "bioinfo-ugrp-module"
+
+Also make sure that all modulefiles written in TCL start with the string
+#%Module
+
+
+
+  An environment variable "BLASTDB" has been set to the databse directory.
+
+  USAGE EXAMPLE:
+    blastn -db nt -query sequence.fasta -num_threads 4  -out result.out
+
+  
+
+real	23m34.497s
+user	28m1.369s
+sys	23m40.219s

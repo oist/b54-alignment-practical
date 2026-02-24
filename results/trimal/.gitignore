@@ -1,0 +1,6 @@
+*.o
+source/readal
+source/statal
+source/trimal
+docs/build
+scripts/dummy-file.txt

@@ -1,0 +1,10 @@
+  An environment variable "BLASTDB" has been set to the databse directory.
+
+  USAGE EXAMPLE:
+    blastx -db uniref90 -query sequence.fasta -num_threads 4 -out result.out
+
+  
+
+real	4m59.396s
+user	35m51.320s
+sys	0m46.044s

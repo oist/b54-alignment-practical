@@ -1,0 +1,122 @@
+CLUSTAL 2.1 multiple sequence alignment
+
+
+Human_PAX6               ----------------------------------------MQNSHSGVNQLGGVFVNGRP
+Mouse_Pax6               ----------------------------------------MQNSHSGVNQLGGVFVNGRP
+Dmel_toy                 --------MMLTTEHIMHGHPHSSVG-----QSTLFGC--STAGHSGINQLGGVYVNGRP
+Dmel_eyeless             -----MFTLQPTPTAIGTVVPPWSAGTLIERLPSLEDM--AHKGHSGVNQLGGVFVGGRP
+Octopus_XP014787872      ----------------------------------FAST--DDAGHSGVNQLGGVFVNGRP
+Squid_ANN46810           MDLTTAYRYHNTNLNMMDFYHSCKMINGSKHNDTFTGFYEATEGHGGVNQLGGVFVNGRP
+                                                                    .*.*:******:*.***
+
+Human_PAX6               LPDSTRQKIVELAHSGARPCDISRILQ--------------VSNGCVSKILGRYYETGSI
+Mouse_Pax6               LPDSTRQKIVELAHSGARPCDISRILQTHADAKVQVLDNENVSNGCVSKILGRYYETGSI
+Dmel_toy                 LPDSTRQKIVELAHSGARPCDISRILQ--------------VSNGCVSKILGRYYETGSI
+Dmel_eyeless             LPDSTRQKIVELAHSGARPCDISRILQ--------------VSNGCVSKILGRYYETGSI
+Octopus_XP014787872      LPDSTRQRIVELAHSGARPCDISRILQ--------------VSNGCVSKILGRYYETGSI
+Squid_ANN46810           LPDAVRQRIVELAHQGVRPCDISRQLR--------------VSHGCVSKILGRYYETGSI
+                         ***:.**:******.*.******* *:              **:****************
+
+Human_PAX6               RPRAIGGSKPRVATPEVVSKIAQYKRECPSIFAWEIRDRLLSEGVCTNDNIPSVSSINRV
+Mouse_Pax6               RPRAIGGSKPRVATPEVVSKIAQYKRECPSIFAWEIRDRLLSEGVCTNDNIPSVSSINRV
+Dmel_toy                 KPRAIGGSKPRVATTPVVQKIADYKRECPSIFAWEIRDRLLSEQVCNSDNIPSVSSINRV
+Dmel_eyeless             RPRAIGGSKPRVATAEVVSKISQYKRECPSIFAWEIRDRLLQENVCTNDNIPSVSSINRV
+Octopus_XP014787872      RPRAIGGSKPRVATPEVVQKIAQFKRECPSIFAWEIRDRLLSEGVCTQDNIPSVSSINRV
+Squid_ANN46810           KPGVIGGSKPKVATPKVVEAISKYKQENPTMFAWEIRDRLLSENICSQDNVPSVSSINRI
+                         :* .******:***. **. *:.:*:* *::**********.* :*..**:********:
+
+Human_PAX6               LRNLASEKQQMG------------------------------------------------
+Mouse_Pax6               LRNLASEKQQMG------------------------------------------------
+Dmel_toy                 LRNLASQKEQQAQ-----------------------------------------------
+Dmel_eyeless             LRNLAAQKEQQSTGSGSSSTSAGNSISAKVSVSIGGNVSNVASGSRGTLSSSTDLMQTAT
+Octopus_XP014787872      LRNLASENQKVIG-----------------------------------------------
+Squid_ANN46810           VRNRAAEKAKAQ------------------------------------------------
+                         :** *::: :                                                  
+
+Human_PAX6               ------------------ADGMYDKLRMLNGQTGS-------------------------
+Mouse_Pax6               ------------------ADGMYDKLRMLNGQTGS-------------------------
+Dmel_toy                 ----------------QQNESVYEKLRMFNGQTGG-------------------------
+Dmel_eyeless             PLNSSESGGASNSGEGSEQEAIYEKLRLLNTQHAAGPGPLEPARAAPLVGQSPNHLGTRS
+Octopus_XP014787872      ------------------QGTMYDKLGLLNGQAWP-------------------------
+Squid_ANN46810           -------------------NPQAQSSPPLQGEAPP-------------------------
+                                                :.   :: :                            
+
+Human_PAX6               --------------------WG-------TRPG--------WYPGTSVP-----------
+Mouse_Pax6               --------------------WG-------TRPG--------WYPGTSVP-----------
+Dmel_toy                 --------------------WA-------WYPSNTTTAHLTLPPAASVVTSPANLS----
+Dmel_eyeless             SHPQLVHGNHQALQQHQQQSWPPRHYSGSWYPTSLSEIPISSAPNIASVTAYASGPSLAH
+Octopus_XP014787872      ------------------------------------------------------------
+Squid_ANN46810           -------------------------------------------PTLNQT-----------
+                                                                                     
+
+Human_PAX6               --------------GQPTQDGCQQQ------EGGGENTNSISS-NGED----------SD
+Mouse_Pax6               --------------GQPTQDGCQQQ------EGGGENTNSISS-NGED----------SD
+Dmel_toy                 --------------GQADRDDVQKRELQFSVEVSHTNSHDSTS-DGNSEHNSSG----DE
+Dmel_eyeless             SLSPPNDIESLASIGHQRNCPVATEDIHLKKELDGHQSDETGSGEGENSNGGASNIGNTE
+Octopus_XP014787872      ------------------------------------------------------------
+Squid_ANN46810           -------------QAPAGADGMTRPGPYSISGILGIPSQNTANLNNGS------------
+                                                                                     
+
+Human_PAX6               EAQMRLQLKRKLQRNRTSFTQEQIEALEKEFERTHYPDVFARERLAAKIDLPEARIQVWF
+Mouse_Pax6               EAQMRLQLKRKLQRNRTSFTQEQIEALEKEFERTHYPDVFARERLAAKIDLPEARIQVWF
+Dmel_toy                 DSQMRLRLKRKLQRNRTSFSNEQIDSLEKEFERTHYPDVFARERLADKIGLPEARIQVWF
+Dmel_eyeless             DDQARLILKRKLQRNRTSFTNDQIDSLEKEFERTHYPDVFARERLAGKIGLPEARIQVWF
+Octopus_XP014787872      ------------------------------------------------------RPNPWY
+Squid_ANN46810           -------FKRKRDDNGESVPNGHADAENRTDTQN---DQMIYPTEHTVIPPKVSRIDPNS
+                                                                               * :   
+
+Human_PAX6               SNRRAKWRREEKLRNQRR-------QAS-----------NTPSHIPISSSFSTS------
+Mouse_Pax6               SNRRAKWRREEKLRNQRR-------QAS-----------NTPSHIPISSSFSTS------
+Dmel_toy                 SNRRAKWRREEKMRTQRR-------SADTVDGSGRTSTANNPSGTTASSSVATSNNSTPG
+Dmel_eyeless             SNRRAKWRREEKLRNQRRTPNSTGASATSSSTSATASLTDSPNSLSACSSLLSGSAGGPS
+Octopus_XP014787872      APN------------------------------------ASMAGLSAPTSYAAQ------
+Squid_ANN46810           NSNGQNYSVYPPS-------------------------FNNFGPTNSANEIPKD------
+                           .                                     .       ..          
+
+Human_PAX6               ----------------------------VYQPIPQPTTPVSSFTSG--------------
+Mouse_Pax6               ----------------------------VYQPIPQPTTPVSSFTSG--------------
+Dmel_toy                 I---------------------------VNSAINVAERTSSALVSNSLPEASN-------
+Dmel_eyeless             VSTINGLSSPSTLSTNVNAPTLGAGIDSSESPTPIPHIRPSCTSDNDNGRQSEDCRRVCS
+Octopus_XP014787872      ------------------------------------------------------------
+Squid_ANN46810           -----------------------------YQPIKQEMPLPGSLASP--------------
+                                                                                     
+
+Human_PAX6               ---SMLG-RTDTALTNTYS----------ALP----------------PMPSFTMANNLP
+Mouse_Pax6               ---SMLG-RTDTALTNTYS----------ALP----------------PMPSFTMANNLP
+Dmel_toy                 -GPTVLGGEANTTHTSSESPPL-----QPAAPRLPLNSG-FNTMYSSIPQPIATMAENYN
+Dmel_eyeless             PCPLGVGGHQNTHHIQSNGHAQGHALVPAISPRLNFNSGSFGAMYSNMHHTALSMSDSYG
+Octopus_XP014787872      ------------------------------------------------PNPTASVASKKG
+Squid_ANN46810           ----GGGGVEGSNYSPPIA-----------------------------PATTYSTSQIYS
+                                                                           .  : :.   
+
+Human_PAX6               ---------------MQPPVPSQ-------TSSYSCMLPT--------------------
+Mouse_Pax6               ---------------MQPPVPSQ-------TSSYSCMLPT--------------------
+Dmel_toy                 SSL----------GSMTPSCLQQ-------RDAYPYMFHDPLS-----------------
+Dmel_eyeless             AVTPIPSFNHSAVGPLAPPSPIPQQGDLTPSSLYPCHMTLRPPPMAPAHHHIVPGDGGRP
+Octopus_XP014787872      ----------------------------------EYM-----------------------
+Squid_ANN46810           ------------------SSTVG---------VSPLVPPTG-------------------
+                                                                                     
+
+Human_PAX6               --------------------------------SPSVNGRSYDTYT----------PPHMQ
+Mouse_Pax6               --------------------------------SPSVNGRSYDTYT----------PPHMQ
+Dmel_toy                 ------------------------------LGSPYVSAHHRNTACNPSAAHQQ--PPQHG
+Dmel_eyeless             AGVGLGSGQSANLGASCSGSGYEVLSAYALPPPPMASSSAADSSFSAASSASANVTPHHT
+Octopus_XP014787872      ------------------------------------------------------------
+Squid_ANN46810           -------------------------------YNGSVPTNDYSNNYG----------PYAP
+                                                                                     
+
+Human_PAX6               THMNSQP----------MGTSGTTSTGLISPGVSVPVQVPG-------------SEPDMS
+Mouse_Pax6               THMNSQP----------MGTSGTTSTGLISPGVSVPVQVPG-------------SEPDMS
+Dmel_toy                 VYTNSSP----------MPSS---NTGVISAGVSVPVQISTQNV----------SDLTGS
+Dmel_eyeless             IAQESCPSPCSSASHFGVAHSSGFSSDPISPAVSSYAHMSYNYASSANTMTPSSASGTSA
+Octopus_XP014787872      ------------------------------------------------------------
+Squid_ANN46810           YSYNDHH-------------WVSRYPSVINPAYYYPPSIRAG-------------DPASS
+                                                                                     
+
+Human_PAX6               QYWPRLQ------------
+Mouse_Pax6               QYWPRLQ------------
+Dmel_toy                 NYWPRLQ------------
+Dmel_eyeless             HVAPGKQQFFASCFYSPWV
+Octopus_XP014787872      -------------------
+Squid_ANN46810           VASSNKT------------
+                                            

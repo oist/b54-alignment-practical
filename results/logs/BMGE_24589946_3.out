@@ -1,0 +1,9 @@
+Trimming pax6_family.prank.fasta.best.fas...
+Picked up _JAVA_OPTIONS: "-Xss2560k"
+FASTA input:   6 sequences, 991 amino acid characters  (pax6_family.prank.fasta.best.fas)
+FASTA output:  6 sequences, 427 amino acid characters  (pax6_family.prank.fasta.best.fas.BMGE)
+HTML output:   6 sequences, 991 amino acid characters  (pax6_family.prank.fasta.best.fas.BMGE.html)
+
+real	0m1.693s
+user	0m1.217s
+sys	0m0.077s

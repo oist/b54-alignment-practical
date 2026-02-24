@@ -1,0 +1,51 @@
+
+-----------------
+ PRANK v.170427:
+-----------------
+
+Input for the analysis
+ - aligning sequences in 'pax6_family.fasta'
+ - using inferred alignment guide tree
+ - option '+F' is not used; it can be enabled with '+F'
+ - external tools available:
+    MAFFT for initial alignment
+    Exonerate for alignment anchoring
+    BppAncestor for ancestral state reconstruction
+
+Correcting (arbitrarily) for multifurcating nodes.
+Correcting (arbitrarily) for multifurcating nodes.
+
+Generating multiple alignment: iteration 1.
+
+Alignment score: 1706
+Correcting (arbitrarily) for multifurcating nodes.
+
+Generating multiple alignment: iteration 2.
+
+Alignment score: 1966
+Correcting (arbitrarily) for multifurcating nodes.
+
+Generating multiple alignment: iteration 3.
+
+Alignment score: 2115
+Correcting (arbitrarily) for multifurcating nodes.
+
+Generating multiple alignment: iteration 4.
+
+Alignment score: 1786
+Correcting (arbitrarily) for multifurcating nodes.
+
+Generating multiple alignment: iteration 5.
+
+Alignment score: 1705
+
+
+Writing
+ - alignment to 'pax6_family.prank.fasta.best.fas'
+
+Analysis done. Total time 30s
+
+
+real	0m30.861s
+user	0m28.568s
+sys	0m0.737s

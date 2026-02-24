@@ -1,0 +1,50 @@
+
+
+
+ CLUSTAL 2.1 Multiple Sequence Alignments
+
+
+Sequence format is Pearson
+Sequence 1: Dmel_eyeless          838 aa
+Sequence 2: Dmel_toy              543 aa
+Sequence 3: Human_PAX6            422 aa
+Sequence 4: Mouse_Pax6            436 aa
+Sequence 5: Octopus_XP014787872   199 aa
+Sequence 6: Squid_ANN46810        432 aa
+Start of Pairwise alignments
+Aligning...
+
+Sequences (1:2) Aligned. Score:  45
+Sequences (1:3) Aligned. Score:  57
+Sequences (1:4) Aligned. Score:  55
+Sequences (1:5) Aligned. Score:  68
+Sequences (1:6) Aligned. Score:  34
+Sequences (2:3) Aligned. Score:  58
+Sequences (2:4) Aligned. Score:  55
+Sequences (2:5) Aligned. Score:  66
+Sequences (2:6) Aligned. Score:  30
+Sequences (3:4) Aligned. Score:  100
+Sequences (3:5) Aligned. Score:  72
+Sequences (3:6) Aligned. Score:  31
+Sequences (4:5) Aligned. Score:  72
+Sequences (4:6) Aligned. Score:  30
+Sequences (5:6) Aligned. Score:  53
+Guide tree file created:   [pax6_family.dnd]
+
+There are 5 groups
+Start of Multiple Alignment
+
+Aligning...
+Group 1: Sequences:   2      Score:9191
+Group 2: Sequences:   3      Score:7168
+Group 3: Sequences:   4      Score:7189
+Group 4: Sequences:   5      Score:3489
+Group 5: Sequences:   6      Score:4840
+Alignment Score 15276
+
+CLUSTAL-Alignment file created  [pax6_family.clustalw.fasta]
+
+
+real	0m0.699s
+user	0m0.289s
+sys	0m0.153s

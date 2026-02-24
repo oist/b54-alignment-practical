@@ -1,0 +1,6 @@
+Trimming pax6_family.clustalw.fasta...
+/var/spool/slurmd/job24597589/slurm_script: line 16: 1176739 Segmentation fault      (core dumped) trimal/source/trimal -in $ALIGNMENT_TO_WORK_WITH -out ${ALIGNMENT_TO_WORK_WITH}.trimal -gappyout
+
+real	0m0.383s
+user	0m0.005s
+sys	0m0.035s

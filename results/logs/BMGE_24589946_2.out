@@ -1,0 +1,9 @@
+Trimming pax6_family.muscle.fasta...
+Picked up _JAVA_OPTIONS: "-Xss2560k"
+FASTA input:   6 sequences, 922 amino acid characters  (pax6_family.muscle.fasta)
+FASTA output:  6 sequences, 443 amino acid characters  (pax6_family.muscle.fasta.BMGE)
+HTML output:   6 sequences, 922 amino acid characters  (pax6_family.muscle.fasta.BMGE.html)
+
+real	0m1.841s
+user	0m1.370s
+sys	0m0.073s

@@ -1,0 +1,9 @@
+Trimming pax6_family.linsi.fasta...
+Picked up _JAVA_OPTIONS: "-Xss2560k"
+FASTA input:   6 sequences, 892 amino acid characters  (pax6_family.linsi.fasta)
+FASTA output:  6 sequences, 496 amino acid characters  (pax6_family.linsi.fasta.BMGE)
+HTML output:   6 sequences, 892 amino acid characters  (pax6_family.linsi.fasta.BMGE.html)
+
+real	0m1.663s
+user	0m1.181s
+sys	0m0.086s
